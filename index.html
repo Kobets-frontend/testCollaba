@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>testCollaba</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container">
+
+      <h1 class="header__title">
+        Управление рассылками
+      </h1>
+
+      <h2 class="header__subtitle">
+        Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться.
+        Но пожалуйста, исключите только те категории, которые действительно вас не интересуют.
+        Мы обещаем слать только полезные письма где 😊
+      </h2>
+
+      <div class="mailing__list">
+
+        <div class="general">
+          <div class="series__title">
+            Общие уведомления
+          </div>
+
+          <div class="series__inner">
+            <div class="series__desc">
+              Приветственная серия
+            </div>
+
+
+
+
+            <label class="toggle">
+              <input type="checkbox" class="toggle__real" name="comission" checked>
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+
+
+
+
+            <div class="series__text">
+              4 полезных и емких письма в течение месяца
+            </div>
+          </div>
+
+          <div class="webinars__inner">
+            <div class="webinars__desc">
+              Образовательные вебинары
+            </div>
+            <label class="toggle">
+              <input type="checkbox" class="toggle__real" name="comission">
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+            <div class="webinars__text">
+              Бесплатные вебинары проходят 1 раз в 2 недели.
+              Вы будете получать 2 письма с напоминанием
+              о предстоящем вебинаре
+            </div>
+          </div>
+
+          <div class="messages__inner">
+            <div class="messages__desc">
+              Личные сообщения
+              <img class="messages__img" id="click" src="images/messages-img.svg" alt="i">
+              <span class="img__text content__hidden" id="content">
+                <p>Письма об обновлениях
+                  и улучшениях платформы</p>
+              </span>
+            </div>
+
+
+
+
+            <label class="toggle">
+              <input type="checkbox" class="toggle__real" name="comission" checked>
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+
+
+
+
+
+
+            <div class="form__box">
+              <form>
+                <label>
+                  <select>
+                    <option>Мгновенно</option>
+                    <option>1 раз в день</option>
+                    <option>Отключить</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <h3 class="notification__title">
+            Уведомление по Сайтам
+          </h3>
+          <div class="notification__inner">
+            <div class="notification__item">
+              Новости
+            </div>
+
+
+
+
+
+
+            <label class="toggle">
+              <input type="checkbox" class="toggle__real" name="comission">
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+            <div class="notification__width"></div>
+          </div>
+
+
+
+
+          <div class="agents">
+            <div class="agents__title">
+              Поисковые агенты
+            </div>
+            <div class="agents__sabtitle">
+              Бизнес
+            </div>
+            <div class="agents__inner">
+              <div class="agents__block-wrap">
+                <div class="agents__item-1 disappears">
+                  <span>Seo</span>
+                  <div class="agents__close-1"></div>
+                </div>
+                <div class="agents__item-2 disappears">
+                  <span> Продвижение</span>
+                  <div class="agents__close-2 "></div>
+                </div>
+                <div class="agents__item-3 disappears">
+                  <span> Аналитика</span>
+                  <div class="agents__close-3"></div>
+                </div>
+              </div>
+              <a data-fancybox data-src="#modal" href="javascript:;" class="agents__btn default-btn">
+                Детали
+              </a>
+
+
+
+
+              <label class="toggle agents__toggle">
+                <input type="checkbox" class="toggle__real" name="comission" checked>
+                <span class="toggle__fake"></span>
+                <span class="toggle__title"></span>
+              </label>
+
+
+
+
+
+              <div class="agents__text">
+                Поисковый агент присылает 1 письмо
+                в неделю и только при условии, что найдены
+                новые площадки
+              </div>
+            </div>
+          </div>
+
+          <div class="numb__sabtitle">
+            123
+          </div>
+
+          <div class="numb__inner">
+            <div class="numb__block-wrap">
+              <div class="numb__item-1 disappears">
+                <span>Seo</span>
+                <div class="numb__close-1"></div>
+              </div>
+              <div class="numb__item-2 disappears">
+                <span> Продвижение</span>
+                <div class="numb__close-2"></div>
+              </div>
+            </div>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn numb__btn">
+              Детали
+            </a>
+
+
+
+            <label class="toggle numb__toggle">
+              <input type="checkbox" class="toggle__real" name="comission">
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+
+
+
+
+            <div class="numb__text">
+            </div>
+          </div>
+
+          <div class="seo__sabtitle">
+            SEO
+          </div>
+          <div class="agents__inner">
+            <div class="agents__block-wrap">
+              <div class="agents__item-1 disappears">
+                <span>Seo</span>
+                <div class="agents__close-1"></div>
+              </div>
+              <div class="agents__item-2 disappears">
+                <span> Продвижение</span>
+                <div class="agents__close-2"></div>
+              </div>
+              <div class="agents__item-3 disappears">
+                <span> Аналитика</span>
+                <div class="agents__close-3"></div>
+              </div>
+            </div>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn agents__btn">
+              Детали
+            </a>
+
+
+
+            <label class="toggle agents__toggle">
+              <input type="checkbox" class="toggle__real" name="comission">
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+
+
+            <div class="agents__text">
+            </div>
+          </div>
+
+          <div class="link__sabtitle">
+            Бурж ссылки
+          </div>
+          <div class="link__inner">
+            <div class="numb__block-wrap">
+              <div class="link__item disappears">
+                <span>Биржи ссылок: Не обнаружен</span>
+                <div class="link__close"></div>
+              </div>
+            </div>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn link__btn">
+              Детали
+            </a>
+
+
+
+
+            <label class="toggle link__toggle">
+              <input type="checkbox" class="toggle__real" name="comission" checked>
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+
+
+
+            <div class="link__text">
+            </div>
+          </div>
+        </div>
+
+        <div class="advertising">
+          <div class="advertising__title">
+            Рекламные компании
+            <img class="advertising__img" src="images/chevron.svg" alt="">
+          </div>
+          <div class="advertising__inner">
+            <div class="advertising__desc">
+              Строительство домов в Москве
+            </div>
+
+
+
+
+            <label class="toggle">
+              <input type="checkbox" class="toggle__real" name="comission checked" checked>
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+
+
+
+
+            <div class="form__box">
+              <form>
+                <label>
+                  <select>
+                    <option>Мгновенно</option>
+                    <option>1 раз в день</option>
+                    <option>Отключить</option>
+                  </select>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="advertising__block-2">
+            <div class="advertising__inner">
+              <div class="advertising__desc">
+                Строительство домов в Москве
+              </div>
+
+
+
+
+              <label class="toggle">
+                <input type="checkbox" class="toggle__real" name="comission">
+                <span class="toggle__fake"></span>
+                <span class="toggle__title"></span>
+              </label>
+
+
+
+
+
+              <div class="form__box">
+                <form>
+                  <label>
+                    <select>
+                      <option>Мгновенно</option>
+                      <option>1 раз в день</option>
+                      <option>Отключить</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="telegrams">
+          <div class="telegrams__title">
+            Уведомления по Телеграму
+          </div>
+          <div class="telegrams__inner">
+            <div class="telegrams__desc">
+              Новости
+            </div>
+            <label class="toggle telegrams__toggle" type="checkbox">
+              <input type="checkbox" class="toggle__real" id="input" name="comission">
+              <span class="toggle__fake"></span>
+              <span class="toggle__title"></span>
+            </label>
+            <div class="telegrams__text">
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn-1" id="button">По умолчанию</button>
+          <button data-fancybox data-src="#modal-wind" href="javascript:;" class="default-btn btn-2">
+            Сохранить изменения
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modalka" id="modal-wind">
+    <div class="toast">Access</div>
+    <h1 class="modalka__title">
+      Вы уверены?
+    </h1>
+    <div class="modal__btn-inner">
+      <button class="modal__btn-1">Да</button>
+      <button class="modal__btn-2">Нет</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    Бесплатные вебинары проходят 1 раз в 2 недели.
+    Вы будете получать 2 письма с напоминанием
+    о предстоящем вебинаре
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
